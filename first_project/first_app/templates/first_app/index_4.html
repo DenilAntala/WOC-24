@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "first_app/base.html" %}
+    {% block body_block %}
+    <div class="jumbotron">
+        <h1>Welcome to our home page</h1>
+        {% if user.is_authenticated %}
+        <p>The site is not ready yet! We will let you know when it is</p>
+        {% else %}
+        {% endif %}
+    </div>
+    {% endblock %}
